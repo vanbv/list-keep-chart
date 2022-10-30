@@ -14,6 +14,7 @@ For install chart you can run script `helm-install.sh`. Environment variables in
 your values.
 * `CLUSTER_URL` - part of the cluster url, used in routes
 * `KEYCLOAK_POSTGRESQL_ADMIN_PASSWORD` - PostgreSQL admin user password
+* `KEYCLOAK_ADMIN_PASSWORD` - Keycloak admin user password
 * `KEYCLOAK_POSTGRESQL_PASSWORD` - PostgreSQL custom user password
 
 For `keycloak` initialization you can run  [init.sh](https://github.com/vanbv/list-keep/blob/main/keycloak/init.sh)

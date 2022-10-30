@@ -14,6 +14,7 @@ Helm chart для деплоя проекта List Keep.
 свои значения.
 * `CLUSTER_URL` - часть url-адреса кластера, используется в роутах
 * `KEYCLOAK_POSTGRESQL_ADMIN_PASSWORD` - пароль пользователя-админа PostgreSQL
+* `KEYCLOAK_ADMIN_PASSWORD` - пароль пользователя-админа Keycloak
 * `KEYCLOAK_POSTGRESQL_PASSWORD` - пароль кастомного пользователя PostgreSQL
 
 Для инициализации `keycloak` можно выполнить скрипт
