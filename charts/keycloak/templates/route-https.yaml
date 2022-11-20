@@ -9,7 +9,6 @@ spec:
     targetPort: https
   tls:
     termination: passthrough
-#  wildcardPolicy: None
   to:
     kind: Service
     name: {{ include "keycloak.fullname" . }}

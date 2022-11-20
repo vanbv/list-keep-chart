@@ -12,7 +12,7 @@ list-keep:
 list-keep-front:
   image:
     repository: ghcr.io/vanbv/list-keep-front
-    tag: v0.0.11
+    tag: v0.0.12
   enabled: true
   service:
     port: 8080
