@@ -27,7 +27,7 @@ dependencies:
   - name: keycloak
     repository: https://charts.bitnami.com/bitnami
     condition: keycloak.enabled
-    version: 9.8.1
+    version: 17.3.6
   - name: list-keep
     condition: list-keep.enabled
     version: "*"
