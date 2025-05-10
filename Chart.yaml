@@ -27,7 +27,11 @@ dependencies:
   - name: keycloak
     repository: https://charts.bitnami.com/bitnami
     condition: keycloak.enabled
-    version: 21.7.1
+    version: 24.6.1
+  - name: postgresql
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+    version: 16.6.6
   - name: list-keep
     condition: list-keep.enabled
     version: "*"
