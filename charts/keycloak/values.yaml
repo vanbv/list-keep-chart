@@ -1,5 +1,2 @@
 route:
-  http:
-    enabled: false
-  https:
-    enabled: false
+  enabled: false

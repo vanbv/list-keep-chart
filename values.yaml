@@ -12,7 +12,7 @@ list-keep:
     - name: POSTGRES_PASSWORD
       valueFrom:
         secretKeyRef:
-          name: list-keep-postgresql
+          name: list-keep-db
           key: postgres-password
 list-keep-front:
   image:
@@ -26,19 +26,10 @@ list-keep-front:
     enabled: true
 keycloak:
   enabled: true
-  podSecurityContext:
-    enabled: false
-  containerSecurityContext:
-    enabled: false
-  proxyHeaders: "forwarded"
-  postgresql:
-    nameOverride: "keycloak-postgresql"
-    primary:
-      podSecurityContext:
-        enabled: false
-      containerSecurityContext:
-        enabled: false
+  keycloak:
+    proxyHeaders: "forwarded"
   route:
     enabled: true
-postgresql:
+postgres:
   enabled: true
+  nameOverride: db

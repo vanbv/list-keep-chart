@@ -2,7 +2,7 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: {{ include "common.names.fullname" . }}
+  name: {{ include "keycloak.fullname" . }}
 spec:
   host: {{ .Values.route.host }}
   port:
@@ -11,5 +11,5 @@ spec:
     termination: edge
   to:
     kind: Service
-    name: {{ include "common.names.fullname" . }}
+    name: {{ include "keycloak.fullname" . }}
 {{- end }}
