@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export CLUSTER_URL=-vanbv-1-dev.apps.rm3.7wse.p1.openshiftapps.com
+export CLUSTER_URL=-your-namespace.openshiftapps.com
 
 helm install list-keep ./ \
   --set list-keep.extraEnv[0].name="KEYCLOAK_URL" \
